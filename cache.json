@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "title": "Edi Wang",
+      "feedUrl": "https://edi.wang/rss",
+      "siteUrl": "https://edi.wang/",
+      "articles": [
+        {
+          "id": "804FB9F7-EEC4-4F27-A95A-E193A522FD16",
+          "author": "Edi.Wang@outlook.com",
+          "description": "In ASP.NET Core unit tests, if you want to mock HttpClient.GetStringAsync(), here's the trick.\n\r\nProblem\n\r\n\r\nGiven the following code\n\r\nvar html = await _httpClient.GetStringAsync(sourceUrl);\n\r\nWhen I tried to mock HttpClient.GetStringAsync() like this\n\r\nvar httpClientMock = new Mock<HttpClient>();\r\nhttpClientMock\r\n    .Setup(p => p.GetStringAsync(It.IsAny<string>()))\r\n    .Returns(Task.FromResult(\"...\"));\n\r\nMoq will blow up sky high\n\r\nSystem.NotSupportedException : Unsupported expression: p => p.GetStringA…",
+          "link": "https://edi.wang/post/2021/5/11/aspnet-core-unit-test-how-to-mock-httpclientgetstringasync",
+          "publishedOn": "2021-05-11T04:36:22.000Z",
+          "wordCount": 550,
+          "title": "ASP.NET Core Unit Test: How to Mock HttpClient.GetStringAsync()"
+        },
+        {
+          "id": "7CB4F3E8-368F-40B8-9583-D0AB61EEE533",
+          "author": "Edi.Wang@outlook.com",
+          "description": "In my previous posts, I have introduced usage of Azure Front Door. However, when we finish setting up the front door and bind our domain to the front door, users can still access the App Service URL. In this post, I'll introduce how to prevent access to our App Service when using Azure Front Door.\n\r\nProblem\n\r\n\r\nFor example, my blog is binding https://edi.wang to my front door, I have 2 App Services running in backend pools in East Asia and West US. Their URLs are https://ediwang-web-ea.azurewebsites.net/ an…",
+          "link": "https://edi.wang/post/2021/5/10/how-to-prevent-access-to-app-service-url-behind-azure-front-door",
+          "publishedOn": "2021-05-10T08:19:50.000Z",
+          "wordCount": 545,
+          "title": "How to Prevent Access to App Service Url Behind Azure Front Door"
+        },
+        {
+          "id": "C889BAFB-71F1-45E5-A1FD-8165C7EEC4F2",
+          "author": "Edi.Wang@outlook.com",
+          "description": "In ASP.NET Core unit tests, if you want to mock HttpContext.Features.Get<SomeType>(), here's the trick.\n\r\nProblem\n\r\n\r\nI have my Error page code that will get exception detail infomation, to do that, I use HttpContext.Features.Get<IExceptionHandlerPathFeature>().\n\r\npublic void OnGet()\r\n{\r\n    var requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;\r\n    var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();\r\n    if (exceptionFeature is not null)\r\n    {\r\n        // Get wh…",
+          "link": "https://edi.wang/post/2021/4/29/aspnet-core-unit-test-how-to-mock-httpcontextfeaturesget",
+          "publishedOn": "2021-04-29T09:36:10.000Z",
+          "wordCount": 517,
+          "title": "ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()"
+        },
+        {
+          "id": "4022DF74-A53F-474E-9BE5-CF0428F5B193",
+          "author": "Edi.Wang@outlook.com",
+          "description": "Problem\n\r\n\r\nIn ASP.NET Core, when you use extension methods on UrlHelperExtensions class, it would be difficult to write Mock in unit test. Because Moq doesn't support mocking extension methods.\n\r\nFor example, the following code that I use in my blog is using Url.Page() method:\n\r\nvar callbackUrl = Url.Page(\"/Index\", null, null, Request.Scheme);\n\r\nBut in my unit test, mocking like this will throw exception:\n\r\nvar mockUrlHelper = new Mock<IUrlHelper>(MockBehavior.Strict);\r\nmockUrlHelper.Setup(x => x.Page(\"/In…",
+          "link": "https://edi.wang/post/2021/4/26/aspnet-core-unit-test-how-to-mock-urlpage",
+          "publishedOn": "2021-04-26T05:47:12.000Z",
+          "wordCount": 520,
+          "title": "ASP.NET Core Unit Test: How to Mock Url.Page()"
+        }
+      ]
+    }
+  ],
+  "cliVersion": "1.7.2"
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rastrainj.github.io/osmosfeed/index.html</id>
+    <title>osmos::feed</title>
+    <updated>2021-05-19T14:41:55.833Z</updated>
+    <generator>osmosfeed 1.7.2</generator>
+    <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
+    <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock HttpClient.GetStringAsync()]]></title>
+        <id>804FB9F7-EEC4-4F27-A95A-E193A522FD16</id>
+        <link href="https://edi.wang/post/2021/5/11/aspnet-core-unit-test-how-to-mock-httpclientgetstringasync"/>
+        <updated>2021-05-11T04:36:22.000Z</updated>
+        <summary type="html"><![CDATA[In ASP.NET Core unit tests, if you want to mock HttpClient.GetStringAsync(), here's the trick.
+
+Problem
+
+
+Given the following code
+
+var html = await _httpClient.GetStringAsync(sourceUrl);
+
+When I tried to mock HttpClient.GetStringAsync() like this
+
+var httpClientMock = new Mock<HttpClient>();
+httpClientMock
+    .Setup(p => p.GetStringAsync(It.IsAny<string>()))
+    .Returns(Task.FromResult("..."));
+
+Moq will blow up sky high
+
+System.NotSupportedException : Unsupported expression: p => p.GetStringA…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Prevent Access to App Service Url Behind Azure Front Door]]></title>
+        <id>7CB4F3E8-368F-40B8-9583-D0AB61EEE533</id>
+        <link href="https://edi.wang/post/2021/5/10/how-to-prevent-access-to-app-service-url-behind-azure-front-door"/>
+        <updated>2021-05-10T08:19:50.000Z</updated>
+        <summary type="html"><![CDATA[In my previous posts, I have introduced usage of Azure Front Door. However, when we finish setting up the front door and bind our domain to the front door, users can still access the App Service URL. In this post, I'll introduce how to prevent access to our App Service when using Azure Front Door.
+
+Problem
+
+
+For example, my blog is binding https://edi.wang to my front door, I have 2 App Services running in backend pools in East Asia and West US. Their URLs are https://ediwang-web-ea.azurewebsites.net/ an…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()]]></title>
+        <id>C889BAFB-71F1-45E5-A1FD-8165C7EEC4F2</id>
+        <link href="https://edi.wang/post/2021/4/29/aspnet-core-unit-test-how-to-mock-httpcontextfeaturesget"/>
+        <updated>2021-04-29T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[In ASP.NET Core unit tests, if you want to mock HttpContext.Features.Get<SomeType>(), here's the trick.
+
+Problem
+
+
+I have my Error page code that will get exception detail infomation, to do that, I use HttpContext.Features.Get<IExceptionHandlerPathFeature>().
+
+public void OnGet()
+{
+    var requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+    var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+    if (exceptionFeature is not null)
+    {
+        // Get wh…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock Url.Page()]]></title>
+        <id>4022DF74-A53F-474E-9BE5-CF0428F5B193</id>
+        <link href="https://edi.wang/post/2021/4/26/aspnet-core-unit-test-how-to-mock-urlpage"/>
+        <updated>2021-04-26T05:47:12.000Z</updated>
+        <summary type="html"><![CDATA[Problem
+
+
+In ASP.NET Core, when you use extension methods on UrlHelperExtensions class, it would be difficult to write Mock in unit test. Because Moq doesn't support mocking extension methods.
+
+For example, the following code that I use in my blog is using Url.Page() method:
+
+var callbackUrl = Url.Page("/Index", null, null, Request.Scheme);
+
+But in my unit test, mocking like this will throw exception:
+
+var mockUrlHelper = new Mock<IUrlHelper>(MockBehavior.Strict);
+mockUrlHelper.Setup(x => x.Page("/In…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
+</feed>
