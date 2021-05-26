@@ -31,15 +31,6 @@
           "publishedOn": "2021-04-29T09:36:10.000Z",
           "wordCount": 517,
           "title": "ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()"
-        },
-        {
-          "id": "4022DF74-A53F-474E-9BE5-CF0428F5B193",
-          "author": "Edi.Wang@outlook.com",
-          "description": "Problem\n\r\n\r\nIn ASP.NET Core, when you use extension methods on UrlHelperExtensions class, it would be difficult to write Mock in unit test. Because Moq doesn't support mocking extension methods.\n\r\nFor example, the following code that I use in my blog is using Url.Page() method:\n\r\nvar callbackUrl = Url.Page(\"/Index\", null, null, Request.Scheme);\n\r\nBut in my unit test, mocking like this will throw exception:\n\r\nvar mockUrlHelper = new Mock<IUrlHelper>(MockBehavior.Strict);\r\nmockUrlHelper.Setup(x => x.Page(\"/In…",
-          "link": "https://edi.wang/post/2021/4/26/aspnet-core-unit-test-how-to-mock-urlpage",
-          "publishedOn": "2021-04-26T05:47:12.000Z",
-          "wordCount": 520,
-          "title": "ASP.NET Core Unit Test: How to Mock Url.Page()"
         }
       ]
     }

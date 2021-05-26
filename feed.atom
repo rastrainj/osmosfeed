@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-05-25T00:55:41.270Z</updated>
+    <updated>2021-05-26T01:07:01.165Z</updated>
     <generator>osmosfeed 1.8.1</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
@@ -68,28 +68,6 @@ public void OnGet()
     if (exceptionFeature is not null)
     {
         // Get wh…]]></summary>
-        <author>
-            <name>Edi.Wang@outlook.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock Url.Page()]]></title>
-        <id>4022DF74-A53F-474E-9BE5-CF0428F5B193</id>
-        <link href="https://edi.wang/post/2021/4/26/aspnet-core-unit-test-how-to-mock-urlpage"/>
-        <updated>2021-04-26T05:47:12.000Z</updated>
-        <summary type="html"><![CDATA[Problem
-
-
-In ASP.NET Core, when you use extension methods on UrlHelperExtensions class, it would be difficult to write Mock in unit test. Because Moq doesn't support mocking extension methods.
-
-For example, the following code that I use in my blog is using Url.Page() method:
-
-var callbackUrl = Url.Page("/Index", null, null, Request.Scheme);
-
-But in my unit test, mocking like this will throw exception:
-
-var mockUrlHelper = new Mock<IUrlHelper>(MockBehavior.Strict);
-mockUrlHelper.Setup(x => x.Page("/In…]]></summary>
         <author>
             <name>Edi.Wang@outlook.com</name>
         </author>

@@ -117,43 +117,9 @@ public void OnGet()
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-04-26">2021-04-26</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://edi.wang/">Edi Wang</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">ASP.NET Core Unit Test: How to Mock Url.Page()</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://edi.wang/post/2021/4/26/aspnet-core-unit-test-how-to-mock-urlpage">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>Problem
-
-
-In ASP.NET Core, when you use extension methods on UrlHelperExtensions class, it would be difficult to write Mock in unit test. Because Moq doesn&#x27;t support mocking extension methods.
-
-For example, the following code that I use in my blog is using Url.Page() method:
-
-var callbackUrl &#x3D; Url.Page(&quot;/Index&quot;, null, null, Request.Scheme);
-
-But in my unit test, mocking like this will throw exception:
-
-var mockUrlHelper &#x3D; new Mock(MockBehavior.Strict);
-mockUrlHelper.Setup(x &#x3D;&gt; x.Page(&quot;/In…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-05-25T00:55:41.247Z">2021-05-25T00:55:41.247Z</time>
+    <time id="build-timestamp" datetime="2021-05-26T01:07:01.144Z">2021-05-26T01:07:01.144Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.8.1</a></span>
   </footer>
   <script src="index.js"></script>
