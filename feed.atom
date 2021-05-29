@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-05-28T01:22:02.955Z</updated>
+    <updated>2021-05-29T01:37:55.487Z</updated>
     <generator>osmosfeed 1.9.0</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
@@ -45,29 +45,6 @@ Problem
 
 
 For example, my blog is binding https://edi.wang to my front door, I have 2 App Services running in backend pools in East Asia and West US. Their URLs are https://ediwang-web-ea.azurewebsites.net/ an…]]></summary>
-        <author>
-            <name>Edi.Wang@outlook.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()]]></title>
-        <id>C889BAFB-71F1-45E5-A1FD-8165C7EEC4F2</id>
-        <link href="https://edi.wang/post/2021/4/29/aspnet-core-unit-test-how-to-mock-httpcontextfeaturesget"/>
-        <updated>2021-04-29T09:36:10.000Z</updated>
-        <summary type="html"><![CDATA[In ASP.NET Core unit tests, if you want to mock HttpContext.Features.Get<SomeType>(), here's the trick.
-
-Problem
-
-
-I have my Error page code that will get exception detail infomation, to do that, I use HttpContext.Features.Get<IExceptionHandlerPathFeature>().
-
-public void OnGet()
-{
-    var requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-    var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
-    if (exceptionFeature is not null)
-    {
-        // Get wh…]]></summary>
         <author>
             <name>Edi.Wang@outlook.com</name>
         </author>

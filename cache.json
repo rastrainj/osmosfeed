@@ -22,15 +22,6 @@
           "publishedOn": "2021-05-10T08:19:50.000Z",
           "wordCount": 545,
           "title": "How to Prevent Access to App Service Url Behind Azure Front Door"
-        },
-        {
-          "id": "C889BAFB-71F1-45E5-A1FD-8165C7EEC4F2",
-          "author": "Edi.Wang@outlook.com",
-          "description": "In ASP.NET Core unit tests, if you want to mock HttpContext.Features.Get<SomeType>(), here's the trick.\n\r\nProblem\n\r\n\r\nI have my Error page code that will get exception detail infomation, to do that, I use HttpContext.Features.Get<IExceptionHandlerPathFeature>().\n\r\npublic void OnGet()\r\n{\r\n    var requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;\r\n    var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();\r\n    if (exceptionFeature is not null)\r\n    {\r\n        // Get wh…",
-          "link": "https://edi.wang/post/2021/4/29/aspnet-core-unit-test-how-to-mock-httpcontextfeaturesget",
-          "publishedOn": "2021-04-29T09:36:10.000Z",
-          "wordCount": 517,
-          "title": "ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()"
         }
       ]
     }

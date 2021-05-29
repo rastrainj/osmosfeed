@@ -82,44 +82,9 @@ For example, my blog is binding https://edi.wang to my front door, I have 2 App 
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-04-29">2021-04-29</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://edi.wang/">Edi Wang</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">ASP.NET Core Unit Test: How to Mock HttpContext.Features.Get()</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://edi.wang/post/2021/4/29/aspnet-core-unit-test-how-to-mock-httpcontextfeaturesget">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>In ASP.NET Core unit tests, if you want to mock HttpContext.Features.Get(), here&#x27;s the trick.
-
-Problem
-
-
-I have my Error page code that will get exception detail infomation, to do that, I use HttpContext.Features.Get().
-
-public void OnGet()
-{
-    var requestId &#x3D; Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-    var exceptionFeature &#x3D; HttpContext.Features.Get();
-    if (exceptionFeature is not null)
-    {
-        // Get wh…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-05-28T01:22:02.929Z">2021-05-28T01:22:02.929Z</time>
+    <time id="build-timestamp" datetime="2021-05-29T01:37:55.462Z">2021-05-29T01:37:55.462Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.9.0</a></span>
   </footer>
   <script src="index.js"></script>
