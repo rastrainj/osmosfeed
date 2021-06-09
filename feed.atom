@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-08T01:11:54.911Z</updated>
+    <updated>2021-06-09T00:51:16.304Z</updated>
     <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
@@ -30,21 +30,6 @@ httpClientMock
 Moq will blow up sky high
 
 System.NotSupportedException : Unsupported expression: p => p.GetStringA…]]></summary>
-        <author>
-            <name>Edi.Wang@outlook.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Prevent Access to App Service Url Behind Azure Front Door]]></title>
-        <id>7CB4F3E8-368F-40B8-9583-D0AB61EEE533</id>
-        <link href="https://edi.wang/post/2021/5/10/how-to-prevent-access-to-app-service-url-behind-azure-front-door"/>
-        <updated>2021-05-10T08:19:50.000Z</updated>
-        <summary type="html"><![CDATA[In my previous posts, I have introduced usage of Azure Front Door. However, when we finish setting up the front door and bind our domain to the front door, users can still access the App Service URL. In this post, I'll introduce how to prevent access to our App Service when using Azure Front Door.
-
-Problem
-
-
-For example, my blog is binding https://edi.wang to my front door, I have 2 App Services running in backend pools in East Asia and West US. Their URLs are https://ediwang-web-ea.azurewebsites.net/ an…]]></summary>
         <author>
             <name>Edi.Wang@outlook.com</name>
         </author>
