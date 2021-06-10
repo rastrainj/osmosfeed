@@ -15,49 +15,9 @@
 
 <body>
 <!-- %after-body-begin.html% -->
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-05-11">2021-05-11</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://edi.wang/">Edi Wang</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">ASP.NET Core Unit Test: How to Mock HttpClient.GetStringAsync()</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://edi.wang/post/2021/5/11/aspnet-core-unit-test-how-to-mock-httpclientgetstringasync">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>In ASP.NET Core unit tests, if you want to mock HttpClient.GetStringAsync(), here&#x27;s the trick.
-
-Problem
-
-
-Given the following code
-
-var html &#x3D; await _httpClient.GetStringAsync(sourceUrl);
-
-When I tried to mock HttpClient.GetStringAsync() like this
-
-var httpClientMock &#x3D; new Mock();
-httpClientMock
-    .Setup(p &#x3D;&gt; p.GetStringAsync(It.IsAny()))
-    .Returns(Task.FromResult(&quot;...&quot;));
-
-Moq will blow up sky high
-
-System.NotSupportedException : Unsupported expression: p &#x3D;&gt; p.GetStringA…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-06-09T00:51:16.279Z">2021-06-09T00:51:16.279Z</time>
+    <time id="build-timestamp" datetime="2021-06-10T00:50:15.099Z">2021-06-10T00:50:15.099Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.10.2</a></span>
   </footer>
   <script src="index.js"></script>

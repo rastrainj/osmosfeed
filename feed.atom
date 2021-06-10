@@ -2,36 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-09T00:51:16.304Z</updated>
+    <updated>2021-06-10T00:50:15.114Z</updated>
     <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
-    <entry>
-        <title type="html"><![CDATA[ASP.NET Core Unit Test: How to Mock HttpClient.GetStringAsync()]]></title>
-        <id>804FB9F7-EEC4-4F27-A95A-E193A522FD16</id>
-        <link href="https://edi.wang/post/2021/5/11/aspnet-core-unit-test-how-to-mock-httpclientgetstringasync"/>
-        <updated>2021-05-11T04:36:22.000Z</updated>
-        <summary type="html"><![CDATA[In ASP.NET Core unit tests, if you want to mock HttpClient.GetStringAsync(), here's the trick.
-
-Problem
-
-
-Given the following code
-
-var html = await _httpClient.GetStringAsync(sourceUrl);
-
-When I tried to mock HttpClient.GetStringAsync() like this
-
-var httpClientMock = new Mock<HttpClient>();
-httpClientMock
-    .Setup(p => p.GetStringAsync(It.IsAny<string>()))
-    .Returns(Task.FromResult("..."));
-
-Moq will blow up sky high
-
-System.NotSupportedException : Unsupported expression: p => p.GetStringA…]]></summary>
-        <author>
-            <name>Edi.Wang@outlook.com</name>
-        </author>
-    </entry>
 </feed>

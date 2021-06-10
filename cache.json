@@ -4,17 +4,7 @@
       "title": "Edi Wang",
       "feedUrl": "https://edi.wang/rss",
       "siteUrl": "https://edi.wang/",
-      "articles": [
-        {
-          "id": "804FB9F7-EEC4-4F27-A95A-E193A522FD16",
-          "author": "Edi.Wang@outlook.com",
-          "description": "In ASP.NET Core unit tests, if you want to mock HttpClient.GetStringAsync(), here's the trick.\n\r\nProblem\n\r\n\r\nGiven the following code\n\r\nvar html = await _httpClient.GetStringAsync(sourceUrl);\n\r\nWhen I tried to mock HttpClient.GetStringAsync() like this\n\r\nvar httpClientMock = new Mock<HttpClient>();\r\nhttpClientMock\r\n    .Setup(p => p.GetStringAsync(It.IsAny<string>()))\r\n    .Returns(Task.FromResult(\"...\"));\n\r\nMoq will blow up sky high\n\r\nSystem.NotSupportedException : Unsupported expression: p => p.GetStringA…",
-          "link": "https://edi.wang/post/2021/5/11/aspnet-core-unit-test-how-to-mock-httpclientgetstringasync",
-          "publishedOn": "2021-05-11T04:36:22.000Z",
-          "wordCount": 550,
-          "title": "ASP.NET Core Unit Test: How to Mock HttpClient.GetStringAsync()"
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.10.2"
