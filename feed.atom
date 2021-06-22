@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-06-21T00:46:29.602Z</updated>
+    <updated>2021-06-22T00:42:07.636Z</updated>
     <generator>osmosfeed 1.10.2</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Identify Users from Different Countries and Regions for Websites on Azure]]></title>
+        <id>59212556-92BE-48A2-AEE7-E0D214D9D9B7</id>
+        <link href="https://edi.wang/post/2021/6/20/identify-users-from-different-countries-and-regions-for-websites-on-azure"/>
+        <updated>2021-06-20T02:21:21.000Z</updated>
+        <summary type="html"><![CDATA[For websites that need to display different content for users in different countries and regions, we usually identify the user's location based on the IP address. It means we have to write our own code, purchasing and maintaining an IP database, or using a third-party IP data service, it will take huge efforts. Although a complete IP database can identify all countries and regions, in many cases, what the website wants is to distinguish a few countries and regions, not all of them. How to quickly do it without purchasing an IP database and write a lot of code? Let's see how Azure can help us with that.
+
+Azure Front Door Again
+
+
+I have introduced Azure Front Door in a couple of posts. 
+
+
+A Brief Introduction for Azure Front Door
+
+Solving Azure AD Sign In Failure with Azure Front Door
+…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hosting Static HTML Website with Azure Static Web Apps]]></title>
         <id>5C1F0C57-BF58-4DA2-97C3-734519A75AA7</id>

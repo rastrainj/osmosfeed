@@ -6,6 +6,15 @@
       "siteUrl": "https://edi.wang/",
       "articles": [
         {
+          "id": "59212556-92BE-48A2-AEE7-E0D214D9D9B7",
+          "author": "Edi.Wang@outlook.com",
+          "description": "For websites that need to display different content for users in different countries and regions, we usually identify the user's location based on the IP address. It means we have to write our own code, purchasing and maintaining an IP database, or using a third-party IP data service, it will take huge efforts. Although a complete IP database can identify all countries and regions, in many cases, what the website wants is to distinguish a few countries and regions, not all of them. How to quickly do it without purchasing an IP database and write a lot of code? Let's see how Azure can help us with that.\n\r\nAzure Front Door Again\n\r\n\r\nI have introduced Azure Front Door in a couple of posts. \n\r\n\r\nA Brief Introduction for Azure Front Door\n\r\nSolving Azure AD Sign In Failure with Azure Front Door\n…",
+          "link": "https://edi.wang/post/2021/6/20/identify-users-from-different-countries-and-regions-for-websites-on-azure",
+          "publishedOn": "2021-06-20T02:21:21.000Z",
+          "wordCount": 628,
+          "title": "Identify Users from Different Countries and Regions for Websites on Azure"
+        },
+        {
           "id": "5C1F0C57-BF58-4DA2-97C3-734519A75AA7",
           "author": "Edi.Wang@outlook.com",
           "description": "When I choose free static website hosting plans, I would use GitHub pages in the past. But now, since the GA of Azure Static Web Apps (SWA), I now have another free of charge option. I've tried to host a few pure HTML/JS website as well as .NET Blazor WASM applications with Azure Static Web Apps. In this post, I'll share how to create a static website by SWA.\n\r\nAzure Static Web Apps\n\r\n\r\nTypically on Azure, if you want to host websites, you will choose App Service or VMs. They support major backend languages and frameworks like .NET, Python, NodeJs, etc. However, if your website is pure static without any backend code, using App Service or VMs would be overkill since they are too expensive for a simple static website. Azure Static Web Apps solves this need of static websites by providing a …",
