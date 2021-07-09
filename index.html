@@ -16,6 +16,41 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-07">2021-07-07</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://edi.wang/">Edi Wang</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Upload File with Progress from Browser to Azure Blob Storage</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://edi.wang/post/2021/7/7/upload-file-with-progress-from-browser-to-azure-blob-storage">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>Recently I am working on an internal OA system for a small company. One of their business requirement is for the users to upload attachments when creating a ticket. Azure Blob Storage is ideal for this scenario. However, the attachments are sized from a few KB to hundreds of MB, so it is necessary to show a progress bar when user upload the files. Let&#x27;s see how can we easily do it with Azure.
+
+The Design
+
+
+The OA system is using ASP.NET Core as it&#x27;s backend API. So basically I can come up with two designs for uploading files to Azure Blob Storage.
+
+
+Create an API that accept files from web front-end and then upload to Azure.
+
+Create an API return just SAS token for Azure Storage, web front-end then use this token to upload files directly to Azure without calling our own API.
+
+
+Opti…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-20">2021-06-20</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -77,7 +112,7 @@ Typically on Azure, if you want to host websites, you will choose App Service or
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-08T00:44:09.441Z">2021-07-08T00:44:09.441Z</time>
+    <time id="build-timestamp" datetime="2021-07-09T00:47:29.265Z">2021-07-09T00:47:29.265Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>

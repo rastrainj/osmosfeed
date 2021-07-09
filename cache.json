@@ -6,6 +6,15 @@
       "siteUrl": "https://edi.wang/",
       "articles": [
         {
+          "id": "08E78DF3-32C2-45EB-8797-BAEFDC06446C",
+          "author": "Edi.Wang@outlook.com",
+          "description": "Recently I am working on an internal OA system for a small company. One of their business requirement is for the users to upload attachments when creating a ticket. Azure Blob Storage is ideal for this scenario. However, the attachments are sized from a few KB to hundreds of MB, so it is necessary to show a progress bar when user upload the files. Let's see how can we easily do it with Azure.\n\r\nThe Design\n\r\n\r\nThe OA system is using ASP.NET Core as it's backend API. So basically I can come up with two designs for uploading files to Azure Blob Storage.\n\r\n\r\nCreate an API that accept files from web front-end and then upload to Azure.\n\r\nCreate an API return just SAS token for Azure Storage, web front-end then use this token to upload files directly to Azure without calling our own API.\n\r\n\r\nOpti…",
+          "link": "https://edi.wang/post/2021/7/7/upload-file-with-progress-from-browser-to-azure-blob-storage",
+          "publishedOn": "2021-07-07T05:29:14.000Z",
+          "wordCount": 1129,
+          "title": "Upload File with Progress from Browser to Azure Blob Storage"
+        },
+        {
           "id": "59212556-92BE-48A2-AEE7-E0D214D9D9B7",
           "author": "Edi.Wang@outlook.com",
           "description": "For websites that need to display different content for users in different countries and regions, we usually identify the user's location based on the IP address. It means we have to write our own code, purchasing and maintaining an IP database, or using a third-party IP data service, it will take huge efforts. Although a complete IP database can identify all countries and regions, in many cases, what the website wants is to distinguish a few countries and regions, not all of them. How to quickly do it without purchasing an IP database and write a lot of code? Let's see how Azure can help us with that.\n\r\nAzure Front Door Again\n\r\n\r\nI have introduced Azure Front Door in a couple of posts. \n\r\n\r\nA Brief Introduction for Azure Front Door\n\r\nSolving Azure AD Sign In Failure with Azure Front Door\n…",

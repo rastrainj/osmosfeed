@@ -2,10 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-08T00:44:09.469Z</updated>
+    <updated>2021-07-09T00:47:29.283Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Upload File with Progress from Browser to Azure Blob Storage]]></title>
+        <id>08E78DF3-32C2-45EB-8797-BAEFDC06446C</id>
+        <link href="https://edi.wang/post/2021/7/7/upload-file-with-progress-from-browser-to-azure-blob-storage"/>
+        <updated>2021-07-07T05:29:14.000Z</updated>
+        <summary type="html"><![CDATA[Recently I am working on an internal OA system for a small company. One of their business requirement is for the users to upload attachments when creating a ticket. Azure Blob Storage is ideal for this scenario. However, the attachments are sized from a few KB to hundreds of MB, so it is necessary to show a progress bar when user upload the files. Let's see how can we easily do it with Azure.
+
+The Design
+
+
+The OA system is using ASP.NET Core as it's backend API. So basically I can come up with two designs for uploading files to Azure Blob Storage.
+
+
+Create an API that accept files from web front-end and then upload to Azure.
+
+Create an API return just SAS token for Azure Storage, web front-end then use this token to upload files directly to Azure without calling our own API.
+
+
+Opti…]]></summary>
+        <author>
+            <name>Edi.Wang@outlook.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Identify Users from Different Countries and Regions for Websites on Azure]]></title>
         <id>59212556-92BE-48A2-AEE7-E0D214D9D9B7</id>
