@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rastrainj.github.io/osmosfeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2021-07-16T00:46:06.521Z</updated>
+    <updated>2021-07-17T00:45:18.897Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="https://rastrainj.github.io/osmosfeed/index.html"/>
     <link rel="self" href="https://rastrainj.github.io/osmosfeed/feed.atom"/>
@@ -46,21 +46,6 @@ A Brief Introduction for Azure Front Door
 
 Solving Azure AD Sign In Failure with Azure Front Door
 …]]></summary>
-        <author>
-            <name>Edi.Wang@outlook.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hosting Static HTML Website with Azure Static Web Apps]]></title>
-        <id>5C1F0C57-BF58-4DA2-97C3-734519A75AA7</id>
-        <link href="https://edi.wang/post/2021/6/17/hosting-static-html-website-with-azure-static-web-apps"/>
-        <updated>2021-06-17T11:25:25.000Z</updated>
-        <summary type="html"><![CDATA[When I choose free static website hosting plans, I would use GitHub pages in the past. But now, since the GA of Azure Static Web Apps (SWA), I now have another free of charge option. I've tried to host a few pure HTML/JS website as well as .NET Blazor WASM applications with Azure Static Web Apps. In this post, I'll share how to create a static website by SWA.
-
-Azure Static Web Apps
-
-
-Typically on Azure, if you want to host websites, you will choose App Service or VMs. They support major backend languages and frameworks like .NET, Python, NodeJs, etc. However, if your website is pure static without any backend code, using App Service or VMs would be overkill since they are too expensive for a simple static website. Azure Static Web Apps solves this need of static websites by providing a …]]></summary>
         <author>
             <name>Edi.Wang@outlook.com</name>
         </author>
